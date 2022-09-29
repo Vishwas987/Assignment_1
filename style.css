@@ -1,4 +1,104 @@
-h1{
-    color: grey;
-    font-size: 40px;
+body{
+    font-family: system-ui;
+     margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.left_container{
+    width: 40%;
+    background-color: rgb(97, 2, 198); 
+    height: 100vh; 
+    float: left;
+}
+.right_container{
+    width: 60%;
+    height: 100vh; 
+    float: right;
+}
+
+.login_form{
+    margin: 8rem auto 0.5rem; 
+    width: 50%;
+}
+
+.input_area{
+    margin: 1.25rem auto 0; 
+    width: 90%;
+}
+
+.input_field{
+    margin-top: 0.5rem;
+    padding: 0.5rem; 
+    width: 100%; 
+    border: none; 
+    background-color: rgb(244, 242, 242); 
+    border-bottom: 3px solid lightgrey; 
+    box-sizing: border-box;
+}
+
+.s_button{
+    display: block; 
+    padding: 0.25rem 2.5rem; 
+    margin: 1.5rem auto; 
+    border: none; 
+    color: gray; 
+    border-radius: 3px;
+}
+
+.s_button:hover{
+    color: rgba(20, 20, 20, 0.773);
+    background-color: gray;
+}
+
+.mobVisi{
+    display: none;
+}
+
+.mobDiv{
+    background-color:rgb(97, 2, 198); 
+    height: 100vh;
+}
+
+@media (max-width: 770px){
+    .webVisi {
+        display: none !important;
+    }
+
+    .mobVisi{
+        display: block !important;
+    }
+
+    .login_form{
+        margin: 1rem auto; 
+        width: 50%;
+        padding: 1.5rem 0;
+        border-radius: 8px;
+    }
+
+    .input_field{
+        padding: 0.5rem 1rem;
+    }
+
+    .s_button{
+        padding: 0.5rem 3rem; 
+    }
+}
+
+@media (max-width: 550px){
+    .login_form{
+        width: 60%;
+    }
+}
+
+@media (max-width: 450px){
+    .login_form{
+        width: 75%;
+    }
+
+    .mobDiv{
+        height: fit-content;
+    }
 }
