@@ -1,35 +1,104 @@
 body{
     font-family: system-ui;
-     margin: 0;
+    margin: 0;
 }
 
 p {
     margin: 0;
 }
 
-.left_container{
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-container{
     width: 40%;
     background-color: rgb(97, 2, 198); 
     height: 100vh; 
-    float: left;
 }
-.right_container{
+.right-container{
     width: 60%;
     height: 100vh; 
-    float: right;
 }
 
-.login_form{
+.info-area{
+    padding: 3rem 3rem 0.5rem;
+}
+
+.login-area{
+    padding: 0.5rem;
+}
+
+.p-h1{
+    font-size: 30px; 
+    font-weight: 200; 
+    line-height: 100%; 
+    color: white;
+}
+
+.p-h1 span{
+    vertical-align: text-top; 
+    font-size: 12px;
+}
+
+.p-h2, .p-h3, .p-text{
+    font-size: 48px; 
+    font-weight: 300; 
+    line-height: 120%; 
+    color: white;
+}
+
+.p-h3{
+    font-size: 26px; 
+}
+
+.p-text{
+    margin: 2rem 0 0; 
+    font-size: 16px;
+}
+
+.p-text span{
+    vertical-align: text-top; 
+    font-size: 10px;
+}
+
+.signup{ 
+    text-align: right; 
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 120%;
+}
+
+.signup a{
+    text-decoration: none; 
+    color: rgb(159, 2, 198);
+}
+
+.sign-in{
+    text-align: center; 
+    font-size: 34px; 
+    font-weight: 500; 
+    line-height: 120%;
+}
+
+.login-box{
+    background-color: white;
     margin: 8rem auto 0.5rem; 
     width: 50%;
 }
 
-.input_area{
+.login-form{
+    /*width: inherit; */
+    margin: 0 auto;
+}
+
+.input-area{
     margin: 1.25rem auto 0; 
     width: 90%;
 }
 
-.input_field{
+.input-field{
     margin-top: 0.5rem;
     padding: 0.5rem; 
     width: 100%; 
@@ -39,7 +108,20 @@ p {
     box-sizing: border-box;
 }
 
-.s_button{
+.forgot-pass{
+    margin: 0.5rem 0; 
+    text-align: right; 
+    font-size: 12px; 
+    font-weight: 500; 
+    line-height: 120%;
+}
+
+.forgot-pass a{
+    text-decoration: none; 
+    color: rgb(159, 2, 198);
+}
+
+.s-button{
     display: block; 
     padding: 0.25rem 2.5rem; 
     margin: 1.5rem auto; 
@@ -48,53 +130,91 @@ p {
     border-radius: 3px;
 }
 
-.s_button:hover{
+.s-button:hover{
     color: rgba(20, 20, 20, 0.773);
     background-color: gray;
 }
 
-.mobVisi{
+.copyright{
+    position: absolute;
+    bottom: 0;
+    width: inherit;
+    text-align: center; 
+    padding-bottom: 0.5rem; 
+    color: black;
+}
+
+.mob-visi{
     display: none;
 }
 
-.mobDiv{
-    background-color:rgb(97, 2, 198); 
-    height: 100vh;
-}
-
 @media (max-width: 770px){
-    .webVisi {
-        display: none !important;
+    .web-visi{
+        display: none;
     }
 
-    .mobVisi{
-        display: block !important;
+    .mob-visi{
+        display: block;
     }
 
-    .login_form{
+    .p-h1, .p-h2, .p-h3, .p-text{
+        text-align: center;
+    }
+
+    #line{
+        display: none;
+    }
+
+    .signup{
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+        background-color: rgb(97, 2, 198);
+    }
+
+    .left-container{
+        width: 100%;
+        height: auto;
+    }
+
+    .right-container{
+        width: 100%;
+        height: auto;
+    }
+    
+    .login-box{
         margin: 1rem auto; 
         width: 50%;
         padding: 1.5rem 0;
         border-radius: 8px;
     }
 
-    .input_field{
+    .input-field{
         padding: 0.5rem 1rem;
     }
 
-    .s_button{
+    .s-button{
         padding: 0.5rem 3rem; 
+    }
+
+    .copyright{
+        position: inherit;
+        margin-top: 2rem; 
+        color: white;
     }
 }
 
 @media (max-width: 550px){
-    .login_form{
+    .login-box{
         width: 60%;
     }
 }
 
 @media (max-width: 450px){
-    .login_form{
+    .login-box{
         width: 75%;
     }
 
