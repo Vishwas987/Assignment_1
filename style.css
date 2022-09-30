@@ -12,53 +12,53 @@ p {
     height: 100vh;
 }
 
-.left-container{
+.container__left{
     width: 40%;
     background-color: rgb(97, 2, 198); 
     height: 100vh; 
 }
-.right-container{
+.container__right{
     width: 60%;
     height: 100vh; 
 }
 
-.info-area{
+.info__area{
     padding: 3rem 3rem 0.5rem;
 }
 
-.login-area{
+.login__area{
     padding: 0.5rem;
 }
 
-.p-h1{
+.info__area--h1{
     font-size: 30px; 
     font-weight: 200; 
     line-height: 100%; 
     color: white;
 }
 
-.p-h1 span{
+.info__area--h1 span{
     vertical-align: text-top; 
     font-size: 12px;
 }
 
-.p-h2, .p-h3, .p-text{
+.info__area--h2, .info__area--h3, .info__area--text{
     font-size: 48px; 
     font-weight: 300; 
     line-height: 120%; 
     color: white;
 }
 
-.p-h3{
+.info__area--h3{
     font-size: 26px; 
 }
 
-.p-text{
+.info__area--text{
     margin: 2rem 0 0; 
     font-size: 16px;
 }
 
-.p-text span{
+.info__area--text span{
     vertical-align: text-top; 
     font-size: 10px;
 }
@@ -82,23 +82,23 @@ p {
     line-height: 120%;
 }
 
-.login-box{
+.login__box{
     background-color: white;
     margin: 8rem auto 0.5rem; 
     width: 50%;
 }
 
-.login-form{
+.login__form{
     /*width: inherit; */
     margin: 0 auto;
 }
 
-.input-area{
+.input__area{
     margin: 1.25rem auto 0; 
     width: 90%;
 }
 
-.input-field{
+.login__form--input-field{
     margin-top: 0.5rem;
     padding: 0.5rem; 
     width: 100%; 
@@ -108,7 +108,7 @@ p {
     box-sizing: border-box;
 }
 
-.forgot-pass{
+.login__form--forgot_pass{
     margin: 0.5rem 0; 
     text-align: right; 
     font-size: 12px; 
@@ -116,12 +116,12 @@ p {
     line-height: 120%;
 }
 
-.forgot-pass a{
+.login__form--forgot_pass a{
     text-decoration: none; 
     color: rgb(159, 2, 198);
 }
 
-.s-button{
+.login__form--button{
     display: block; 
     padding: 0.25rem 2.5rem; 
     margin: 1.5rem auto; 
@@ -130,7 +130,7 @@ p {
     border-radius: 3px;
 }
 
-.s-button:hover{
+.login__form--button:hover{
     color: rgba(20, 20, 20, 0.773);
     background-color: gray;
 }
@@ -157,11 +157,11 @@ p {
         display: block;
     }
 
-    .p-h1, .p-h2, .p-h3, .p-text{
+    .info__area--h1, .info__area--h2, .info__area--h3, .info__area--text{
         text-align: center;
     }
 
-    #line{
+    .info__area--line{
         display: none;
     }
 
@@ -175,28 +175,28 @@ p {
         background-color: rgb(97, 2, 198);
     }
 
-    .left-container{
+    .container__left{
         width: 100%;
         height: auto;
     }
 
-    .right-container{
+    .container__right{
         width: 100%;
         height: auto;
     }
     
-    .login-box{
+    .login__box{
         margin: 1rem auto; 
         width: 50%;
         padding: 1.5rem 0;
         border-radius: 8px;
     }
 
-    .input-field{
+    .login__form--input-field{
         padding: 0.5rem 1rem;
     }
 
-    .s-button{
+    .login__form--button{
         padding: 0.5rem 3rem; 
     }
 
@@ -208,13 +208,13 @@ p {
 }
 
 @media (max-width: 550px){
-    .login-box{
+    .login__box{
         width: 60%;
     }
 }
 
 @media (max-width: 450px){
-    .login-box{
+    .login__box{
         width: 75%;
     }
 
