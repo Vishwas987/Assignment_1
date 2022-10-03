@@ -17,20 +17,22 @@ p {
     margin-left: 1rem;
 }
 
+
 .container {
     display: flex;
-    height: 100vh;
+    height: auto;
+    background-color: rgb(97, 2, 198);
+    flex-direction: column;
 }
 
 .container__left{
-    width: 40%;
+    width: auto;
     padding: 3rem 3rem 0.5rem;
-    background-color: rgb(97, 2, 198); 
-    height: 100vh; 
+    height:auto; 
 }
 .container__right{
-    width: 60%;
-    height: 100vh; 
+    width: 100%;
+    height: auto; 
 }
 
 .login-area{
@@ -42,6 +44,7 @@ p {
     font-weight: 200; 
     line-height: 100%; 
     color: white;
+    text-align: center;
 }
 
 .container__left__h1 span{
@@ -53,6 +56,7 @@ p {
     font-size: 48px; 
     font-weight: 300; 
     line-height: 120%; 
+    text-align: center;
     color: white;
 }
 
@@ -61,6 +65,7 @@ p {
 }
 
 .container__left__text{
+    text-align: center;
     font-size: 16px;
 }
 
@@ -70,10 +75,11 @@ p {
 }
 
 .signup{ 
-    text-align: right; 
+    text-align: center;
     font-size: 16px; 
     font-weight: 400; 
     line-height: 120%;
+    padding-bottom: 0.5rem;
 }
 
 .signup a{
@@ -90,8 +96,9 @@ p {
 
 .login-box{
     background-color: white;
-    margin: 8rem auto 0.5rem; 
-    width: 50%;
+    margin: 1.5rem auto; 
+    width: 75%;
+    border-radius: 8px;
 }
 
 .msg-box{
@@ -119,7 +126,6 @@ p {
 }
 
 .login-form{
-    /*width: inherit; */
     margin: 0 auto;
 }
 
@@ -129,13 +135,13 @@ p {
 }
 
 .login-form__input-field{
-    margin-top: 0.5rem;
-    padding: 0.5rem; 
+    margin-top: 0.5rem;   
     width: 100%; 
     border: none; 
     background-color: rgb(244, 242, 242); 
     border-bottom: 3px solid lightgrey; 
     box-sizing: border-box;
+    padding: 0.5rem 1rem;
 }
 
 .login-form__forgot-pass{
@@ -153,11 +159,11 @@ p {
 
 .login-form__button{
     display: block; 
-    padding: 0.25rem 2.5rem; 
     margin: 1.5rem auto; 
     border: none; 
     color: gray; 
     border-radius: 3px;
+    padding: 0.5rem 3rem;
 }
 
 .login-form__button:hover{
@@ -166,49 +172,51 @@ p {
 }
 
 .copyright{
-    position: absolute;
-    bottom: 0;
-    width: inherit;
+    margin-top: 2rem; 
     text-align: center; 
     padding-bottom: 0.5rem; 
-    color: black;
+    color: white;
 }
 
-.mob-visi{
+
+.web-visi{
     display: none;
 }
 
-@media (max-width: 770px){
+@media (min-width: 700px){
     .web-visi{
-        display: none;
-    }
-
-    .mob-visi{
         display: block;
     }
 
+    .mob-visi{
+        display: none;
+    }
+
     .container__left__h1, .container__left__h2, .container__left__h3, .container__left__text{
-        text-align: center;
+        text-align: left;
     }
 
     .signup{
-        text-align: center;
+        text-align: right;
     }
 
     .container {
-        flex-direction: column;
-        height: auto;
-        background-color: rgb(97, 2, 198);
+        flex-direction: row;
+        background-color: white;
+        height: 100vh;
+        
     }
 
     .container__left{
-        width: auto;
-        height: auto;
+        width: 40%;
+        height: 100vh;
+        background-color: rgb(97, 2, 198);
     }
 
     .container__right{
-        width: 100%;
-        height: auto;
+        width: 60%;
+        background-color: white;
+        height: 100vh;
     }
     
     .login-box{
@@ -219,28 +227,17 @@ p {
     }
 
     .login-form__input-field{
-        padding: 0.5rem 1rem;
+        padding: 0.5rem;
     }
 
     .login-form__button{
-        padding: 0.5rem 3rem; 
+        padding: 0.25rem 2.5rem; 
     }
 
     .copyright{
-        position: inherit;
-        margin-top: 2rem; 
-        color: white;
-    }
-}
-
-@media (max-width: 550px){
-    .login-box{
-        width: 60%;
-    }
-}
-
-@media (max-width: 450px){
-    .login-box{
-        width: 75%;
+        position: absolute;
+        bottom: 0;
+        color: black;
+        
     }
 }
