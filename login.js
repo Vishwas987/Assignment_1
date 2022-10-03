@@ -1,20 +1,20 @@
 function login(){
     var uName = document.getElementById("email").value;
     var pwd = document.getElementById("password").value;
-    var msg = document.getElementById("message");
     var msgBox = document.getElementById("message_box");
 
     if(uName == '' || pwd == ''){
-        msgBox = msgBox.className = "msg-box msg-box--wrong";
-        msg = msg.innerText = "Please enter email and password";
+        msgBox.innerText = "Please enter email and password";
+        msgBox.className = "msg-box msg-box--wrong";
+        
     }
     else if(uName == 'admin' && pwd == 'admin123'){
-        msgBox = msgBox.className = "msg-box msg-box--correct";
-        msg = msg.innerText = "Login Success!";
+        msgBox.className = "msg-box msg-box--correct";
+        msgBox.innerText = "Login Success!";
     }
     else {
-        msgBox = msgBox.className = "msg-box msg-box--wrong";
-        msg = msg.innerText = "Please enter correct email and password";
+        msgBox.className = "msg-box msg-box--wrong";
+        msgBox.innerText = "Please enter correct email and password";
     }
     
 }
