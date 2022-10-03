@@ -6,60 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Assignment 1</title>
+    <script src="login.js"></script>
 </head>
 
 <body>
     <main>
         <div class="container">
             <div class="container__left">
-                <div class="info__area">
-                    <p class="info__area--h1">
+                <div class="info-area">
+                    <p class="info-area__h1">
                         comproDLS<span>TM</span>
                     </p>
-                    <p class="info__area--h2">
+                    <p class="info-area__h2">
                         OnBoarding
                     </p>
-                    <hr id="info__area--line">
-                    <p class="info__area--h3">
+                    <hr id="info-area__hr">
+                    <p class="info-area__h3">
                         Application
                     </p>
-                    <p class="info__area--text">
+                    <p class="info-area__text mt-2">
                         Welcome to the comproDLS<span>TM</span> OnBoarding 
                         Application for mentors and freshers. Please sign in using your organization email and password.
-                        <br><br>
+                    </p>
+                    <p class="info-area__text mt-1">
                         In case you do not have an account, click on 'Sing Up now' to get started.
                     </p>
                 </div>
             </div>
             <div class="container__right">
-                <div class="login__area">
+                <div class="login-area">
                     <p class="signup web-visi">
                         Not a member? &nbsp;&nbsp;<span><a href="#">
                             Request an Account</a>
                         </span>
                     </p>
     
-                    <div class="login__box">
+                    <div class="login-box">
 
-                        <div class="msg__box" id="message_box">
-                            <p class="msg__box--message" id="message">
+                        <div class="msg-box" id="message_box">
+                            <p class="msg-box__message" id="message">
                             </p>
                         </div>
 
-                        <p class="sign-in">
+                        <p class="login-box__sign-in">
                             Sign in
                         </p>
-                        <div class="input__area">
-                            <form class="login__form">
-                                <input class="login__form--input-field" type="text" id="email" placeholder="Email" name="e_mail">
+                        <div class="input-area">
+                            <form class="login-form">
+                                <input class="login-form__input-field" type="text" id="email" placeholder="Email" name="e_mail">
                                 
-                                <input class="login__form--input-field" type="password" id="password" placeholder="Password" name="pass">
+                                <input class="login-form__input-field" type="password" id="password" placeholder="Password" name="pass">
     
-                                <p class="login__form--forgot_pass">
+                                <p class="login-form__forgot-pass">
                                     <a href="#">FORGOT PASSWORD</a>
                                 </p>
     
-                                <button class="login__form--button" type="button" onclick="login()">
+                                <button class="login-form__button" type="button" onclick="login()">
                                     LOGIN
                                 </button>
 
@@ -83,6 +85,6 @@
     </main>
 </body>
 
-<script src="login.js"></script>
+
 
 </html>

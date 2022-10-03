@@ -7,6 +7,14 @@ p {
     margin: 0;
 }
 
+.mt-1{
+    margin-top: 1rem;
+}
+
+.mt-2{
+    margin-top: 2rem;
+}
+
 .container {
     display: flex;
     height: 100vh;
@@ -22,43 +30,42 @@ p {
     height: 100vh; 
 }
 
-.info__area{
+.info-area{
     padding: 3rem 3rem 0.5rem;
 }
 
-.login__area{
+.login-area{
     padding: 0.5rem;
 }
 
-.info__area--h1{
+.info-area__h1{
     font-size: 30px; 
     font-weight: 200; 
     line-height: 100%; 
     color: white;
 }
 
-.info__area--h1 span{
+.info-area__h1 span{
     vertical-align: text-top; 
     font-size: 12px;
 }
 
-.info__area--h2, .info__area--h3, .info__area--text{
+.info-area__h2, .info-area__h3, .info-area__text{
     font-size: 48px; 
     font-weight: 300; 
     line-height: 120%; 
     color: white;
 }
 
-.info__area--h3{
+.info-area__h3{
     font-size: 26px; 
 }
 
-.info__area--text{
-    margin: 2rem 0 0; 
+.info-area__text{
     font-size: 16px;
 }
 
-.info__area--text span{
+.info-area__text span{
     vertical-align: text-top; 
     font-size: 10px;
 }
@@ -75,20 +82,20 @@ p {
     color: rgb(159, 2, 198);
 }
 
-.sign-in{
+.login-box__sign-in{
     text-align: center; 
     font-size: 34px; 
     font-weight: 500; 
     line-height: 120%;
 }
 
-.login__box{
+.login-box{
     background-color: white;
     margin: 8rem auto 0.5rem; 
     width: 50%;
 }
 
-.msg__box{
+.msg-box{
     width: 90%;
     height: 70px; 
     margin: 1rem auto 2rem;
@@ -99,33 +106,33 @@ p {
     justify-content: center;
 }
 
-.msg__box--correct{
+.msg-box--correct{
     background-color: rgb(240, 255, 218);
     color: rgb(0, 189, 0); 
 }
 
-.msg__box--wrong{
+.msg-box--wrong{
     background-color: rgb(250, 207, 207);
     color: rgb(189, 0, 24); 
 }
 
-.msg__box--message{
+.msg-box__message{
     font-size: 16px; 
     font-weight: 500;
     text-align: center;
 }
 
-.login__form{
+.login-form{
     /*width: inherit; */
     margin: 0 auto;
 }
 
-.input__area{
+.input-area{
     margin: 1.25rem auto 0; 
     width: 90%;
 }
 
-.login__form--input-field{
+.login-form__input-field{
     margin-top: 0.5rem;
     padding: 0.5rem; 
     width: 100%; 
@@ -135,7 +142,7 @@ p {
     box-sizing: border-box;
 }
 
-.login__form--forgot_pass{
+.login-form__forgot-pass{
     margin: 0.5rem 0; 
     text-align: right; 
     font-size: 12px; 
@@ -143,12 +150,12 @@ p {
     line-height: 120%;
 }
 
-.login__form--forgot_pass a{
+.login-form__forgot-pass a{
     text-decoration: none; 
     color: rgb(159, 2, 198);
 }
 
-.login__form--button{
+.login-form__button{
     display: block; 
     padding: 0.25rem 2.5rem; 
     margin: 1.5rem auto; 
@@ -157,7 +164,7 @@ p {
     border-radius: 3px;
 }
 
-.login__form--button:hover{
+.login-form__button:hover{
     color: rgba(20, 20, 20, 0.773);
     background-color: gray;
 }
@@ -184,11 +191,11 @@ p {
         display: block;
     }
 
-    .info__area--h1, .info__area--h2, .info__area--h3, .info__area--text{
+    .info-area__h1, .info-area__h2, .info-area__h3, .info-area__text{
         text-align: center;
     }
 
-    .info__area--line{
+    .info-area__hr{
         display: none;
     }
 
@@ -212,18 +219,18 @@ p {
         height: auto;
     }
     
-    .login__box{
+    .login-box{
         margin: 1rem auto; 
         width: 50%;
         padding: 1.5rem 0;
         border-radius: 8px;
     }
 
-    .login__form--input-field{
+    .login-form__input-field{
         padding: 0.5rem 1rem;
     }
 
-    .login__form--button{
+    .login-form__button{
         padding: 0.5rem 3rem; 
     }
 
@@ -235,17 +242,13 @@ p {
 }
 
 @media (max-width: 550px){
-    .login__box{
+    .login-box{
         width: 60%;
     }
 }
 
 @media (max-width: 450px){
-    .login__box{
+    .login-box{
         width: 75%;
-    }
-
-    .mobDiv{
-        height: fit-content;
     }
 }
