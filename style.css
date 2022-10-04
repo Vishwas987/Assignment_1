@@ -209,14 +209,17 @@ p {
 
     .container__left{
         width: 40%;
-        height: 100vh;
+        /*height: 100vh;*/
+        height: auto;
         background-color: rgb(97, 2, 198);
     }
 
     .container__right{
         width: 60%;
         background-color: white;
-        height: 100vh;
+        /*height: 100vh;*/
+        height: inherit;
+        position: relative;
     }
     
     .login-box{
@@ -236,8 +239,9 @@ p {
 
     .copyright{
         position: absolute;
-        bottom: 0;
+        bottom: 0px;
         color: black;
+        width: 100%;
         
     }
 }
