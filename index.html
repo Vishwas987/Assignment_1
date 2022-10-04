@@ -6,8 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Assignment 1</title>
+    <script src="login.js"></script>
 </head>
+
 <body>
-    <h1>comproDLS</h1>
+    <main>
+        <div class="container">
+            <div class="container__left">
+                <p class="container__left__h1">
+                    comproDLS<span>TM</span>
+                </p>
+                <p class="container__left__h2">
+                    OnBoarding
+                </p>
+                <hr class="web-visi">
+                <p class="container__left__h3">
+                    Application
+                </p>
+                <p class="container__left__text mt-2">
+                    Welcome to the comproDLS<span>TM</span> OnBoarding 
+                    Application for mentors and freshers. Please sign in using your organization email and password.
+                </p>
+                <p class="container__left__text mt-1">
+                    In case you do not have an account, click on 'Sing Up now' to get started.
+                </p>
+            </div>
+            <div class="container__right">
+                <div class="login-area">
+                    <p class="signup web-visi">
+                        Not a member?<span class="ml-1"><a href="#">Request an Account</a>
+                        </span>
+                    </p>
+    
+                    <div class="login-box">
+
+                        <div class="msg-box" id="message_box">
+                        </div>
+
+                        <p class="login-box__sign-in">
+                            Sign in
+                        </p>
+                        <div class="input-area">
+                            <form class="login-form">
+                                <input class="login-form__input-field" type="text" id="email" placeholder="Email" name="e_mail">
+                                
+                                <input class="login-form__input-field" type="password" id="password" placeholder="Password" name="pass">
+    
+                                <p class="login-form__forgot-pass">
+                                    <a href="#">FORGOT PASSWORD</a>
+                                </p>
+    
+                                <button class="login-form__button" type="button" onclick="login()">
+                                    LOGIN
+                                </button>
+
+                                <p class="signup mob-visi">
+                                    Not a member? &nbsp;&nbsp;<span><a href="#">
+                                        Request an Account</a>
+                                    </span>
+                                </p>
+    
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="copyright">
+                    &#169; 2022 Compro Technologies All Rights Reserved
+                </p>
+            </div>
+        </div>
+
+    </main>
 </body>
+
+
+
 </html>
