@@ -19,20 +19,20 @@ p {
 
 
 .container {
-    display: flex;
-    height: auto;
     background-color: rgb(97, 2, 198);
+    display: flex;
     flex-direction: column;
+    height: auto;
 }
 
 .container__left{
-    width: auto;
-    padding: 3rem 3rem 0.5rem;
     height:auto; 
+    padding: 3rem 3rem 0.5rem;
+    width: auto;
 }
 .container__right{
-    width: 100%;
     height: auto; 
+    width: 100%;
 }
 
 .login-area{
@@ -42,22 +42,23 @@ p {
 .container__left__h1{
     font-size: 30px; 
     font-weight: 200; 
-    line-height: 100%; 
     color: white;
+    line-height: 100%; 
     text-align: center;
 }
 
 .container__left__h1 span{
-    vertical-align: text-top; 
     font-size: 12px;
+    vertical-align: text-top; 
 }
 
 .container__left__h2, .container__left__h3, .container__left__text{
+    color: white;
     font-size: 48px; 
     font-weight: 300; 
     line-height: 120%; 
     text-align: center;
-    color: white;
+    
 }
 
 .container__left__h3{
@@ -65,54 +66,55 @@ p {
 }
 
 .container__left__text{
-    text-align: center;
     font-size: 16px;
+    text-align: center;
 }
 
 .container__left__text span{
-    vertical-align: text-top; 
     font-size: 10px;
+    vertical-align: text-top; 
 }
 
 .signup{ 
-    text-align: center;
     font-size: 16px; 
     font-weight: 400; 
     line-height: 120%;
     padding-bottom: 0.5rem;
+    text-align: center;
 }
 
 .signup a{
-    text-decoration: none; 
     color: rgb(159, 2, 198);
+    text-decoration: none; 
 }
 
 .login-box__sign-in{
-    text-align: center; 
     font-size: 34px; 
     font-weight: 500; 
     line-height: 120%;
+    text-align: center; 
 }
 
 .login-box{
     background-color: white;
+    border-radius: 8px;
     margin: 1.5rem auto; 
     width: 75%;
-    border-radius: 8px;
+    
 }
 
 .msg-box{
-    width: 90%;
-    height: 70px; 
-    margin: 1rem auto 2rem;
+    align-items: center;
     border: none;
     border-radius: 8px;
+    display: flex;
     font-size: 16px; 
     font-weight: 500;
-    text-align: center;
-    display: flex;
-    align-items: center; 
+    height: 70px;
     justify-content: center;
+    margin: 1rem auto 2rem;
+    text-align: center;
+    width: 90%;
 }
 
 .msg-box--correct{
@@ -135,47 +137,47 @@ p {
 }
 
 .login-form__input-field{
-    margin-top: 0.5rem;   
-    width: 100%; 
     border: none; 
     background-color: rgb(244, 242, 242); 
     border-bottom: 3px solid lightgrey; 
     box-sizing: border-box;
+    margin-top: 0.5rem;   
     padding: 0.5rem 1rem;
+    width: 100%; 
 }
 
 .login-form__forgot-pass{
-    margin: 0.5rem 0; 
-    text-align: right; 
     font-size: 12px; 
     font-weight: 500; 
     line-height: 120%;
+    margin: 0.5rem 0; 
+    text-align: right;
 }
 
 .login-form__forgot-pass a{
-    text-decoration: none; 
     color: rgb(159, 2, 198);
+    text-decoration: none; 
 }
 
 .login-form__button{
+    border: none; 
+    border-radius: 3px;
+    color: gray; 
     display: block; 
     margin: 1.5rem auto; 
-    border: none; 
-    color: gray; 
-    border-radius: 3px;
     padding: 0.5rem 3rem;
 }
 
 .login-form__button:hover{
-    color: rgba(20, 20, 20, 0.773);
     background-color: gray;
+    color: rgba(20, 20, 20, 0.773);
 }
 
 .copyright{
-    margin-top: 2rem; 
-    text-align: center; 
-    padding-bottom: 0.5rem; 
     color: white;
+    margin-top: 2rem; 
+    padding-bottom: 0.5rem; 
+    text-align: center; 
 }
 
 
@@ -201,29 +203,29 @@ p {
     }
 
     .container {
-        flex-direction: row;
         background-color: white;
+        flex-direction: row;
         height: 100vh;
-        
     }
 
     .container__left{
-        width: 40%;
-        height: 100vh;
         background-color: rgb(97, 2, 198);
+        height: 100vh;
+        width: 40%;
     }
 
     .container__right{
-        width: 60%;
         background-color: white;
         height: 100vh;
+        width: 60%;
     }
     
     .login-box{
-        margin: 1rem auto; 
-        width: 50%;
-        padding: 1.5rem 0;
         border-radius: 8px;
+        margin: 1rem auto; 
+        padding: 1.5rem 0;
+        width: 50%;
+        
     }
 
     .login-form__input-field{
@@ -235,9 +237,8 @@ p {
     }
 
     .copyright{
-        position: absolute;
         bottom: 0;
         color: black;
-        
+        position: absolute;
     }
 }
